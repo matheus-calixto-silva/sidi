@@ -13,7 +13,7 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setError(''); // Limpa qualquer mensagem de erro antes de tentar o login
+    setError(''); 
 
     const success = await handleLogin(username, password);
 

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import useNavigation from '../../../app/libs/navigate';
 import { registerUser } from '../../../app/services/user';
-import styles from './Register.module.css'; // Certifique-se de criar esse arquivo CSS
+import styles from './Register.module.css';
 
 const Register = () => {
   const [nome, setNome] = useState('');
@@ -16,7 +16,6 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Verifica se as senhas coincidem
     if (senha !== confirmarSenha) {
       alert('As senhas não coincidem!');
       return;
@@ -29,18 +28,16 @@ const Register = () => {
       email,
       senha,
       registrosPontos: [],
-      id: new Date().toISOString(), // Gerar ID com base no tempo (exemplo)
+      id: new Date().toISOString(),
     };
 
     console.log(newUser);
-    // Aqui você pode adicionar a lógica para enviar os dados para o backend
 
     const response = await registerUser(newUser);
 
     if (response) {
       alert('Usuário registrado com sucesso!');
       navigate('/login')
-      // Redirecionar ou limpar os campos após o cadastro bem-sucedido, conforme necessário
     } else {
       alert('Erro ao cadastrar o usuário.');
     }

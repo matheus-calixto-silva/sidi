@@ -20,7 +20,7 @@
 .buttonsContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1rem; /* Isso garante que o espaçamento entre os botões seja aplicado */
+  gap: 1rem;
 }
 
 .button {

@@ -1,4 +1,3 @@
-// LoggedNavBar.jsx
 import { useContext } from 'react';
 import { AuthContext } from '../../../app/contexts/AuthContext';
 import useNavigation from '../../../app/libs/navigate';

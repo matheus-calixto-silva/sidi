@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import styles from './Start.module.css'; // Importe o arquivo CSS
+import styles from './Start.module.css';
 
 const Start = () => {
   const [date, setDate] = useState('');
@@ -8,7 +8,6 @@ const Start = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aqui você pode adicionar a lógica de envio do formulário
     console.log({
       date,
       entryTime,
