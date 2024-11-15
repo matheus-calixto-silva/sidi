@@ -1,5 +1,3 @@
-Aqui está um exemplo de `README.md` para o seu projeto "Sidi", com explicação sobre os scripts `server` e `dev`:
-
 ```markdown
 # Sidi
 
